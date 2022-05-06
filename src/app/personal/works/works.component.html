@@ -1,0 +1,64 @@
+<div class="container-fluid theme" id="works">
+  <div class="container">
+    <div class="row">
+        <div class="col w-100 p-5">
+            <p class="display-6 text-white" id="title">My Works</p>
+            <mat-icon class="arrow text-white" id="arrow">trending_flat</mat-icon>
+            <br><br>
+            <div class="m-auto">
+              <ngb-carousel #carousel [interval]="3000" [pauseOnHover]="true">
+                  <ng-template ngbSlide>
+                   <!-- first -->
+                    <div class="card mat-elevation-z1">
+                      <a href="https://greenhat-sr.netlify.app/" target="_blank" class="btn">
+                      <img src="assets/educate.jpg" class="card-img-top" alt="...">
+          
+                      <div class="card-body">
+                        <h5 class="card-title">Educate Me</h5>
+                        <p class="card-text"> EducateMe Provides Best Youtube tutorials among all which seems best for the learning of certain technology.</p>
+                        <br>
+                    </div>
+                  </a>
+          
+                    </div>
+                    <!-- end -->
+                  </ng-template>
+          
+                  <ng-template ngbSlide>
+                   <!-- second -->
+                    <div class="card mat-elevation-z1">
+                      <a href="http://myplayer.epizy.com" target="_blank" class="btn">
+                      <img src="assets/player.jpg" class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <h5 class="card-title">My Player</h5>
+                        <p class="card-text">  MyPlayer is an online music streaming application like Spotify where you can listen songs online with great user interface (UI)</p>
+                    </div>
+                  </a>
+          
+                  </div>
+                  <!-- end -->
+                   </ng-template>
+          
+                   <ng-template ngbSlide>
+                      <!-- third -->
+                      <div class="card mat-elevation-z1">
+                        <a href="https://equals-angular.herokuapp.com/" target="_blank" class="btn">
+                        <img src="assets/equals.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Equals</h5>
+                          <p class="card-text"> Equals is a social media platform where you can create your account and follow your friends and family,like and comments on their posts.</p>
+                        </div>
+                      </a>
+          
+                        </div>
+                        <!-- end -->
+                   </ng-template>
+                </ngb-carousel>
+                
+          </div>
+        </div>
+          <br><br><br><br>
+    </div>
+    
+</div>
+</div>

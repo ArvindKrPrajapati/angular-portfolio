@@ -1,0 +1,17 @@
+.arrow{
+    transform-origin: left;
+    font-size: 25px;
+    transform: scaleX(2);
+    transition: all .3s ease;
+}
+#title:hover ~ #arrow{
+    transform: scaleX(4.4);
+}
+.theme{
+    border-radius: 8px;
+    width: 90%;
+    margin: 5px; 
+}
+.theme:hover{
+    transform: scale(1.02);
+}

@@ -1,0 +1,28 @@
+.landing{
+    background: var(--theme);
+}
+.img{
+    width:60%;
+    border-radius: 50% 50% 0 50%;
+    aspect-ratio: 1/1;
+    position: relative;
+    z-index: 3;
+}
+
+.arrow{
+    transform-origin: left;
+    transform: scaleX(2);
+    font-size: 25px;
+    transition: all .3s ease;
+}
+.arrow:hover{
+    transform: scaleX(6);
+    color: lightcoral;
+}
+
+@media screen and (min-width:768px){
+    .mydiv,.imgdiv{
+        height: 100vh;
+    }
+  
+}

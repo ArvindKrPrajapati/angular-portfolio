@@ -1,0 +1,14 @@
+.social a{
+    background-color: #222222;
+    margin-right: 10px;
+    transition: all .3s ease;
+
+}
+svg{
+    width:25px;
+    height:25px;
+}
+
+.social a:hover{
+    transform: scale(0.8);
+}

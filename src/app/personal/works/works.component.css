@@ -1,0 +1,23 @@
+.arrow{
+    transform-origin: left;
+    font-size: 25px;
+    transform: scaleX(2);
+    transition: all .3s ease;
+}
+#title:hover ~ #arrow{
+    transform: scaleX(4.4);
+}
+
+.card{
+    background-color: #eee;
+    border-radius: 8px;
+    margin: 5px;
+    width: 50%;
+    margin: auto;
+}
+@media screen and (max-width:800px) {
+    .card{
+        width: 100%;
+    }
+    
+}

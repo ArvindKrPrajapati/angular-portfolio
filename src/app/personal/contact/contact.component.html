@@ -1,0 +1,49 @@
+<div class="container-fluid theme">
+   <div class="container p-4 pt-5">
+       <div class="row">
+        <div class="col">
+            <p class="display-6 text-white" id="title">Contact Me</p>
+            <mat-icon class="arrow text-white" id="arrow">trending_flat</mat-icon>
+        </div>
+      </div>
+
+      <div class="row p-1">
+        <div class="col-md-5 m-auto order-md-1" id="contact">
+          <form #contact="ngForm" (submit)="sendMail(contact)">
+               <div class="mb-3" *ngIf="required">
+                 <div class="alert alert-danger p-2" style="font-size: 13px;">All fields are required</div>
+               </div>
+               <div class="mb-3" *ngIf="sending!==''">
+                <div class="text-white">Your Email {{sending}}</div>
+              </div>
+              <div class="mb-3">
+                  <label for="name" class="form-label text-white">Full Name</label>
+                  <input type="text" name="name" ngModel class="form-control" id="name">
+                </div>
+              <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label text-white">Email address</label>
+                <input type="email" name="email" ngModel class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+              </div>
+             
+              <div class="mb-3">
+                  <label for="message" class="form-label text-white">Message</label>
+                  <textarea class="form-control" name="text" ngModel id="message"></textarea>
+                </div>
+             
+              <button type="submit" [disabled]="isDisabled"class="btn btn-primary mb-4">Send Email</button>
+            </form>
+      </div>
+
+        <div class="col-md-6 d-md-flex justify-content-center align-items-center">
+            <div>
+            <p class="display-6 text-white-50">Arvind Kumar</p>
+            <p class="text-secondary">Ballia , Uttar Pradesh India</p>
+            <p class="text-secondary">My Email : arvindsoft@gmail.com</p>
+            <p class="text-secondary">Moble / whatsapp : +91 8789096437</p>
+            <app-social></app-social>
+            </div>
+        </div>
+
+      </div>
+   </div>
+</div>
